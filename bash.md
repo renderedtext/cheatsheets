@@ -1,5 +1,9 @@
 # Bash
 
+Count the number of files per directory:
+
+    for i in ./*; do echo $i; find $i |wc -l; done
+
 Split lines of output:
 
     command | sed -e "s/delimiter/\n/g" | tail -x

@@ -8,6 +8,10 @@ Add user to sudoers list:
 
     sudo usermod -a -G sudo <username>
 
+Purge all packages that match some criteria:
+
+    apt-get --purge remove postgresql* 
+
 Fixing remote locale - first add this to your `~/.bash_profile`:
 
     export LANGUAGE="en"
