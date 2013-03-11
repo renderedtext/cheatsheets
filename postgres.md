@@ -11,3 +11,9 @@ Before import, database must be empty.
 or
     
     psql dbname -f db.sql
+
+### Get database size
+
+First log in the console with `psql dbname`, then:
+
+    SELECT pg_size_pretty(pg_database_size('dbname'));
