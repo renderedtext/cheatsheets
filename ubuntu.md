@@ -23,3 +23,7 @@ Then run:
 
     sudo locale-gen en_US en_US.UTF-8
     sudo dpkg-reconfigure locales
+
+Change timezone (check with `date`):
+
+    sudo ln -sf /usr/share/zoneinfo/US/Pacific /etc/localtime
