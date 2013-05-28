@@ -52,3 +52,7 @@ How to repeat command n times:
     }
 
 After you `source ~/.bash-aliases` you will be able to run `repeat 5 echo hello`.
+
+Echo something to a file as root:
+
+    sudo sh -c "echo 'something' >> /etc/privilegedfile"
