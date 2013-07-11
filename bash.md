@@ -27,7 +27,7 @@ Test if file or directory exists:
         echo the file exists
     fi
 
-One lineer:
+How to write one-liners:
 
     if [ -f config/some.yml.example ]; then mv config/some.yml.example config/some.yml; fi
 
@@ -56,3 +56,11 @@ After you `source ~/.bash-aliases` you will be able to run `repeat 5 echo hello`
 Echo something to a file as root:
 
     sudo sh -c "echo 'something' >> /etc/privilegedfile"
+
+Find and replace across files:
+
+    find . -name "*.rb" -print | xargs sed -i 's/foo/bar/g'
+
+Find and replace in a single file:
+
+    sudo sed -i 's/#START=yes/START=yes/g' /etc/default/beanstalkd
