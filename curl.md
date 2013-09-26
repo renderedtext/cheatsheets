@@ -15,3 +15,4 @@ PUT a resource:
 ### Useful options
 
 - `i` - show response headers
+- `k` - skip validation of SSL certificate
