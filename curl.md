@@ -12,6 +12,10 @@ PUT a resource:
 
     curl -X PUT url
 
+Download a file:
+
+    curl -O url
+
 ### Useful options
 
 - `i` - show response headers
