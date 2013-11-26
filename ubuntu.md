@@ -27,3 +27,7 @@ Then run:
 Change timezone (check with `date`):
 
     sudo ln -sf /usr/share/zoneinfo/US/Pacific /etc/localtime
+
+Install a specific version of a package:
+
+    sudo apt-get install apache2=2.2.20-1ubuntu1
