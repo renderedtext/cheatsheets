@@ -1,5 +1,9 @@
 # Bash
 
+Use output of one program, one by one, as an argument to another:
+
+    ls | xargs -n 1 rm $1
+
 Count the number of files per directory:
 
     for i in ./*; do echo $i; find $i |wc -l; done
