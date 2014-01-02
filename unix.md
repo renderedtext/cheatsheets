@@ -2,4 +2,4 @@
 
 Be silent:
 
-du --max-depth=1 -c -h .
+    du --max-depth=1 -c -h .
